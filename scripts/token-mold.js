@@ -27,7 +27,7 @@ export default class TokenMold {
      */
     Hooks.on("renderActorDirectory", (app, element) => {
       TokenLog.log(TokenLog.LOG_LEVEL.Debug, "renderActorDirectory");
-      if (game.user.isGM) {
+      if (game.user.isGM || !this.settings.gmsOnly) {
         //if (options.parts && !options.parts.includes("token-mold")) return;
         this._hookActorDirectory(element);
       }
@@ -91,7 +91,7 @@ export default class TokenMold {
 
     Hooks.once("ready", async () => {
       TokenLog.log(TokenLog.LOG_LEVEL.Debug, "ready");
-      if (!game.user.isGM) {
+      if (!game.user.isGM && this.settings.gmsOnly) {
         return;
       }
 
@@ -174,7 +174,7 @@ export default class TokenMold {
     // Remove if replace is unset
     if (
       !game.user ||
-      !game.user.isGM ||
+      (!game.user.isGM && this.settings.gmsOnly) ||
       this.settings.name.replace !== "replace"
     ) {
       // Useful to free up memory? its "just" up to 17MB...
@@ -1109,6 +1109,7 @@ export default class TokenMold {
     TokenLog.log(TokenLog.LOG_LEVEL.Info, "Loading #defaultSettings");
     return {
       unlinkedOnly: true,
+      gmsOnly: true,
       name: {
         use: true,
         number: {
