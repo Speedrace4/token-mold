@@ -27,7 +27,7 @@ export default class TokenMold {
      */
     Hooks.on("renderActorDirectory", (app, element) => {
       TokenLog.log(TokenLog.LOG_LEVEL.Debug, "renderActorDirectory");
-      if (game.user.isGM || !this.settings.gmsOnly) {
+      if (game.user.isGM) {
         //if (options.parts && !options.parts.includes("token-mold")) return;
         this._hookActorDirectory(element);
       }
