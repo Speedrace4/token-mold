@@ -5,6 +5,7 @@
 
   "tmold.config.applySettings": "将设置应用于",
   "tmold.config.unlinkedOnly": "仅未同步数据的指示物",
+  "tmold.config.gmsOnly": "Allow module for gms only",
 
   "tmold.tab.infoHelp": "信息/帮助",
   "tmold.tab.name": "名称",

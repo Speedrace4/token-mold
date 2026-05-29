@@ -6,6 +6,7 @@
 
   "tmold.config.applySettings": "Aplicar ajustes a",
   "tmold.config.unlinkedOnly": "solo a iconos no vinculados",
+  "tmold.config.gmsOnly": "Allow module for gms only",
 
   "tmold.tab.infoHelp": "Información/ayuda",
   "tmold.tab.name": "Nombre",

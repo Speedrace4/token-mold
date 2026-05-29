@@ -5,6 +5,7 @@
 
     "tmold.config.applySettings": "リンクされてないトークンのみ",
     "tmold.config.unlinkedOnly": "設定を適用します。",
+    "tmold.config.gmsOnly": "Allow module for gms only",
 
     "tmold.tab.infoHelp": "案内",
     "tmold.tab.name": "名前",
