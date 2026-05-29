@@ -64,24 +64,24 @@ export default class TokenMoldForm extends HandlebarsApplicationMixin(
   static PARTS = {
     tabs: { template: "templates/generic/tab-navigation.hbs" },
     infoHelp: {
-      template: "modules/token-mold/templates/token-mold-form-info.hbs",
+      template: "modules/token-mold-modified-for-players/templates/token-mold-form-info.hbs",
     },
     name: {
-      template: "modules/token-mold/templates/token-mold-form-names.hbs",
+      template: "modules/token-mold-modified-for-players/templates/token-mold-form-names.hbs",
     },
     systemSpecific: {
       template:
-        "modules/token-mold/templates/token-mold-form-systemSpecific.hbs",
+        "modules/token-mold-modified-for-players/templates/token-mold-form-systemSpecific.hbs",
     },
     defaultConfig: {
-      template: "modules/token-mold/templates/token-mold-form-config.hbs",
+      template: "modules/token-mold-modified-for-players/templates/token-mold-form-config.hbs",
     },
     statOverlay: {
-      template: "modules/token-mold/templates/token-mold-form-overlay.hbs",
+      template: "modules/token-mold-modified-for-players/templates/token-mold-form-overlay.hbs",
     },
     footer: { template: "templates/generic/form-footer.hbs" },
   };
-  // header: {template: "modules/token-mold/templates/token-mold-form-header.hbs"},
+  // header: {template: "modules/token-mold-modified-for-players/templates/token-mold-form-header.hbs"},
 
   /**
    * Configuration of application tabs, with an entry per tab group.

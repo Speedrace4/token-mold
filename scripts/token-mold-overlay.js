@@ -24,7 +24,7 @@ export default class TokenMoldOverlay extends HandlebarsApplicationMixin(
 
   static PARTS = {
     HUD: {
-      template: "modules/token-mold/templates/overlay.hbs",
+      template: "modules/token-mold-modified-for-players/templates/overlay.hbs",
     },
   };
 
